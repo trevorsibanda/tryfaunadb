@@ -1,32 +1,77 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-fauna {
+  background-color: #323fcb;
 }
+
+.no-border-input {
+  background: transparent;
+  border: 0;
+  border-style: none;
+  border-color: transparent;
+  outline: none;
+  outline-offset: 0;
+  box-shadow: none;
+}
+
+.btn-glowing {
+  background-color: #004A7F;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 5000ms infinite;
+  -moz-animation: glowing 5000ms infinite;
+  -o-animation: glowing 5000ms infinite;
+  animation: glowing 5000ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+.btn-squared-default
+    {
+        width: 100px !important;
+        height: 100px !important;
+        font-size: 10px;
+    }
+
+        .btn-squared-default:hover
+        {
+            border: 3px solid white;
+            font-weight: 800;
+        }
+
+    .btn-squared-default-plain
+    {
+        width: 100px !important;
+        height: 100px !important;
+        font-size: 10px;
+    }
+
+        .btn-squared-default-plain:hover
+        {
+            border: 0px solid white;
+        }
